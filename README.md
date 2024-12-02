@@ -1,1 +1,1 @@
-# odin-admin-dashboard
+The intent of this project is to create a sample dashboard design, with a focus on design over functionality. Completion of this project will demonstrate an understanding of intermediate HTML & CSS concepts, including CSS Grid.
