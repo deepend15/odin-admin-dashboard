@@ -66,20 +66,13 @@ ul {
 }
 
 .sidebar img {
+    height: 100%;
     grid-column: 1;
 }
 
 .dashboard-line h2,
 .sidebar li p {
     grid-column: 2;
-}
-
-.dashboard-line img {
-    height: 1.5rem;
-}
-
-.sidebar li img {
-    height: 1rem;
 }
 
 .header {
