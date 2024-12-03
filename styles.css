@@ -77,6 +77,26 @@ ul {
 
 .header {
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header-search img,
+.notify-img {
+    height: 1rem;
+}
+
+.header-nav {
+    grid-column: 2;
+}
+
+.header-greeting-container {
+    grid-row: 2;
+}
+
+.header-greeting-buttons {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .main {
