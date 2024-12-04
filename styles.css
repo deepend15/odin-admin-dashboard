@@ -170,7 +170,30 @@ input[type="search"] {
     grid-column: 2;
 }
 
+.announcement-container {
+    background-color: white;
+    padding: 20px 10px;
+    display: grid;
+}
+
 .trending-section {
     grid-column: 2;
     grid-row: 2;
+}
+
+.trending-container {
+    background-color: white;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 15px;
+    row-gap: 25px;
+}
+
+.trending-container img {
+    grid-column: 1;
+}
+
+.trending-container > div {
+    grid-column: 2;
 }
