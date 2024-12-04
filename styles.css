@@ -42,46 +42,31 @@ ul {
     color: white;
     padding: 15px;
     display: grid;
-    grid-template-rows: repeat(3, min-content);
-    gap: 30px;
-}
-
-.dashboard-line {
-    font-size: 1.5rem;
-    grid-row: 1;
-}
-
-.menu-1 {
-    grid-row: 2;
-}
-
-.menu-2 {
-    grid-row: 3;
-}
-
-.dashboard-line,
-.sidebar li {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    gap: 5px;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: repeat(10, min-content);
+    align-items: center;
 }
 
 .sidebar img {
     grid-column: 1;
+    justify-self: center;
 }
 
-.dashboard-line img {
+.sidebar h2,
+.sidebar p {
+    grid-column: 2;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.dashboard-img {
     height: 2rem;
 }
 
-.menu-1 img,
-.menu-2 img {
+.sidebar-img {
     height: 1rem;
-}
-
-.dashboard-line h2,
-.sidebar li p {
-    grid-column: 2;
 }
 
 .header {
