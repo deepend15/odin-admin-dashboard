@@ -121,7 +121,6 @@ input[type="search"] {
     border-radius: 10px;
     border-style: none;
     background-color: rgb(225, 235, 225);
-    /* background-color: #e2e8f0; */
     font-weight: 500;
     padding: 10px;
 }
@@ -197,7 +196,6 @@ input[type="search"] {
 .main {
     grid-column: 2;
     grid-row: 2;
-    /* background-color: #e2e8f0; */
     background-color: rgb(225, 235, 225);
     padding: 30px 20px 50px 15px;
     display: grid;
