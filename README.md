@@ -2,10 +2,10 @@ The intent of this project is to create a sample dashboard design, with a focus 
 
 Icon credit:
 
-<a href="https://www.flaticon.com/free-icons/witch" title="witch icons">Witch icons created by Freepik - Flaticon</a>
+Witch icons created by Freepik - Flaticon: https://www.flaticon.com/free-icons/witch
 
-<a href="https://www.flaticon.com/free-icons/magic" title="magic icons">Magic icons created by Freepik - Flaticon</a>
+Magic icons created by Freepik - Flaticon: https://www.flaticon.com/free-icons/magic
 
-<a href="https://www.flaticon.com/free-icons/thunder" title="thunder icons">Thunder icons created by designhub - Flaticon</a>
+Thunder icons created by designhub - Flaticon: https://www.flaticon.com/free-icons/thunder
 
-<a href="https://www.flaticon.com/free-icons/happy" title="happy icons">Happy icons created by Eucalyp - Flaticon</a>
+Happy icons created by Eucalyp - Flaticon: https://www.flaticon.com/free-icons/happy
