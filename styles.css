@@ -22,11 +22,6 @@ h1, h2, h3, h4, h5 {
     font-weight: inherit;
   }
 
-/* img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  } */
-
 ul {
     list-style-type: none;
 }
@@ -35,6 +30,7 @@ ul {
     --wicked-green: #57c330;
     --light-green: rgb(225, 235, 225);
     --dark-green: #064e3b;
+    --paragraph-color: rgb(100, 100, 100);
 }
 
 .container {
@@ -230,7 +226,7 @@ h4 {
 
 .main h3 {
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding-left: 10px;
 }
 
@@ -249,19 +245,29 @@ h4 {
 .card,
 .announcement-container,
 .trending-container {
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 2px 4px 4px lightgray;
 }
 
-.card:hover {
-    box-shadow: 0 0 12px 1.5px var(--wicked-green);
-}
-
 .card {
     background-color: white;
-    padding: 15px;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
+    border-left: 8px solid var(--dark-green);
+}
+
+.card:hover {
+    box-shadow: 0 0 12px var(--dark-green);
+}
+
+.card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    color: var(--paragraph-color);
 }
 
 .card-icons {
@@ -280,7 +286,6 @@ h4 {
 
 .announcement-container {
     background-color: white;
-    padding: 30px;
     display: grid;
     gap: 20px;
 }
@@ -291,7 +296,7 @@ h4 {
 
 .announcement-container p {
     font-size: 0.9rem;
-    color: rgb(98, 98, 98);
+    color: var(--paragraph-color);
     line-height: 1.3;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -314,7 +319,6 @@ h4 {
 
 .trending-container {
     background-color: white;
-    padding: 15px;
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 15px;
@@ -330,6 +334,15 @@ h4 {
 
 .user-info {
     grid-column: 2;
+}
+
+.user-info > p:first-child {
+    margin-bottom: 2px;
+}
+
+.user-info > p:last-child {
+    color: var(--paragraph-color);
+    font-size: 0.95rem;
 }
 
 .small-user1-icon {
