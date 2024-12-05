@@ -33,6 +33,8 @@ ul {
 
 :root {
     --wicked-green: #57c330;
+    --light-green: rgb(225, 235, 225);
+    --dark-green: #064e3b;
 }
 
 .container {
@@ -117,12 +119,18 @@ ul {
 
 input[type="search"] {
     width: 90%;
-    height: 30px;
+    height: 32px;
     border-radius: 10px;
     border-style: none;
-    background-color: rgb(225, 235, 225);
+    background-color: var(--light-green);
     font-weight: 500;
-    padding: 10px;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+input[type="search"]:focus {
+    outline: 2px solid var(--dark-green);
+    box-shadow: 2px 2px 4px gray;
 }
 
 .header-nav {
@@ -200,7 +208,7 @@ input[type="search"] {
 .main {
     grid-column: 2;
     grid-row: 2;
-    background-color: rgb(225, 235, 225);
+    background-color: var(--light-green);
     padding: 30px 20px 50px 15px;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
