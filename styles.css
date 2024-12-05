@@ -138,6 +138,10 @@ input[type="search"] {
     height: 2rem;
 }
 
+.small-user1-icon {
+    height: 1.5rem;
+}
+
 .nav-user-icon-container,
 .trending-user2-icon-container {
     background-color: var(--wicked-green);
@@ -263,4 +267,31 @@ input[type="search"] {
 
 .user-info {
     grid-column: 2;
+}
+
+.trending-user1-icon-container {
+    background-color: rgb(255, 154, 171);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.trending-user3-icon-container {
+    background-color: darkblue;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.trending-user4-icon-container {
+    background-color: rgb(255, 47, 0);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
 }
