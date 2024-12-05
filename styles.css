@@ -207,6 +207,12 @@ input[type="search"]:focus {
     padding: 8px 12px;
 }
 
+.header-buttons button:hover {
+    background-color: var(--dark-green);
+    color: var(--wicked-green);
+    box-shadow: 0 0 4px var(--dark-green);
+}
+
 .main {
     grid-column: 2;
     grid-row: 2;
