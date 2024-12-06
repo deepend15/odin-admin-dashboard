@@ -65,7 +65,7 @@ ul {
     grid-template-columns: 1fr 4fr;
 }
 
-.header,
+header,
 .main,
 footer {
     font-family: 'deliusregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -137,7 +137,7 @@ li > a {
     }    
 }
 
-.header {
+header {
     grid-column: 2;
     padding: 15px 50px;
     display: grid;
@@ -150,7 +150,7 @@ li > a {
     z-index: 2;
 }
 
-.header a {
+header a {
     color: inherit;
 }
 
@@ -413,10 +413,18 @@ h3,
 
 .trending-container {
     background-color: white;
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    column-gap: 15px;
-    row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.trending-user1-container,
+.trending-user2-container,
+.trending-user3-container,
+.trending-user4-container {
+    display: flex;
+    gap: 15px;
     align-items: center;
 }
 
@@ -424,16 +432,12 @@ h3,
 .trending-user2-icon-container,
 .trending-user3-icon-container,
 .trending-user4-icon-container {
-    grid-column: 1;
-}
-
-.user-info {
-    grid-column: 2;
+    flex-shrink: 0;
 }
 
 .trending-container a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 .trending-container a:hover {
