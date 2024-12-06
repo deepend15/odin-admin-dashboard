@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'deliusregular';
+    src: url('./fonts/delius-regular-webfont.woff2') format('woff2'),
+         url('./fonts/delius-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'walter_turncoatregular';
+    src: url('./fonts2/walterturncoat-webfont.woff2') format('woff2'),
+         url('./fonts2/walterturncoat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'yataghanregular';
+    src: url('./fonts3/yataghan-webfont.woff2') format('woff2'),
+         url('./fonts3/yataghan-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
     box-sizing: border-box;
 }
@@ -38,16 +65,24 @@ ul {
     grid-template-columns: 1fr 4fr;
 }
 
+.header,
+.main,
+footer {
+    font-family: 'deliusregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .sidebar {
     grid-row: 1 / 3;
     background-color: var(--wicked-green);
     font-weight: bold;
+    font-family: 'walter_turncoatregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.1rem;
+    letter-spacing: 1px;
     padding: 15px;
     display: grid;
     grid-template-rows: repeat(3, min-content);
     align-items: center;
-    row-gap: 40px;
+    row-gap: 50px;
 }
 
 .dashboard-line {
@@ -72,7 +107,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 17px;
 }
 
 .menu1 ul li,
@@ -135,7 +170,6 @@ input[type="search"] {
     background-color: var(--light-green);
     font-weight: 500;
     padding: 12px;
-    font-size: 1.1rem;
 }
 
 input[type="search"]:focus {
@@ -195,12 +229,15 @@ input[type="search"]:focus {
 }
 
 .header-greeting-line1 {
-    font-size: 0.9rem;
-    margin-bottom: 5px;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    font-family: 'deliusregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .header-greeting-line2 {
-    font-size: 1.5rem;
+    font-family: 'yataghanregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.6rem;
+    letter-spacing: 2px;
 }
 
 .header-buttons {
@@ -228,17 +265,19 @@ input[type="search"]:focus {
     grid-column: 2;
     grid-row: 2;
     background-color: var(--light-green);
-    padding: 30px 20px 70px 20px;
+    padding: 40px 30px 70px 20px;
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content 1fr;
     column-gap: 20px;
     row-gap: 30px;
 }
 
 h3,
-h4 {
+.announcement-section h4 {
     font-weight: bold;
+    font-family: 'walter_turncoatregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 1px;
 }
 
 .main h3 {
@@ -279,13 +318,17 @@ h4 {
 }
 
 .card h4 {
-    font-size: 1.1rem;
+    font-family: 'yataghanregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: bold;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
     margin-bottom: 6px;
 }
 
 .card p {
     color: var(--paragraph-color);
-    line-height: 1.3;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 .card-icons {
@@ -313,9 +356,9 @@ h4 {
 }
 
 .announcement-container p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--paragraph-color);
-    line-height: 1.3;
+    line-height: 1.5;
 
     /* below code truncates the text at 3 lines and adds an ellipsis */
 
@@ -391,12 +434,12 @@ footer {
     color: var(--wicked-green);
 }
 
-footer > p {
-    font-size: 1.1rem;
-}
-
 footer a {
     color: inherit;
+}
+
+footer > p {
+    font-size: 1.1rem;
 }
 
 footer > p > a {
@@ -419,4 +462,6 @@ footer > p > a:hover {
 
 .middot {
     font-size: 2.5rem;
+    line-height: 1.5rem;
+    display: contents;
 }
