@@ -45,40 +45,41 @@ ul {
     font-size: 1.1rem;
     padding: 15px;
     display: grid;
-    grid-template-columns: 30px 1fr;
-    grid-template-rows: repeat(10, min-content);
+    grid-template-rows: repeat(3, min-content);
     align-items: center;
-    gap: 15px;
+    row-gap: 40px;
 }
 
-.sidebar img {
-    grid-column: 1;
-    justify-self: center;
-}
-
-.sidebar h2,
-.sidebar > p {
-    grid-column: 2;
-}
-
-.sidebar h2 {
+.dashboard-line {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content 1fr;
     font-size: 1.5rem;
 }
 
 .dashboard-img {
     height: 2rem;
+    margin: 0 0.5rem;
 }
 
-.sidebar-img,
-.communities-img {
-    height: 1rem;
+.sidebar-img {
+    height: 1.1rem;
+    margin: 0 1rem;
 }
 
-.sidebar h2,
-.dashboard-img,
-.communities-img,
-.communities {
-    margin-bottom: 30px;
+.menu1 ul,
+.menu2 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.menu1 ul li,
+.menu2 ul li {
+    display: flex;
+    align-items: center;
+    line-height: 1.4rem;
 }
 
 .sidebar a {
@@ -86,9 +87,19 @@ ul {
     text-decoration: none;
 }
 
-.sidebar a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+li > a {
+    cursor: default;
+
+    /* below corrects a weird formatting issue that occurs when wrapping an 'a' element around an 'img' */
+    
+    display: contents;
+}
+
+.sidebar li:hover {
+    font-size: 1.4rem;
+    img {
+        height: 1.4rem;
+    }    
 }
 
 .header {
@@ -304,6 +315,9 @@ h4 {
     font-size: 0.9rem;
     color: var(--paragraph-color);
     line-height: 1.3;
+
+    /* below code truncates the text at 3 lines and adds an ellipsis */
+
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
