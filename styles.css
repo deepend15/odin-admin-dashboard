@@ -59,12 +59,12 @@ ul {
 
 .dashboard-img {
     height: 2rem;
-    margin: 0 0.5rem;
+    margin-right: 1rem;
 }
 
 .sidebar-img {
     height: 1.1rem;
-    margin: 0 1rem;
+    margin: 0 1.6rem 0 0.4rem;
 }
 
 .menu1 ul,
