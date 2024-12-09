@@ -324,10 +324,10 @@ h3,
 
 .card {
     background-color: white;
-    /* display: grid;
-    grid-template-rows: min-content 1fr min-content; */
-    height: 250px;
+    height: 260px;
     border-left: 8px solid var(--dark-green);
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -346,10 +346,12 @@ h3,
     color: var(--paragraph-color);
     line-height: 1.5;
     font-size: 0.95rem;
+    margin-bottom: 5px;
+    overflow: auto;
 }
 
 .card-icons {
-    margin-top: 10px;
+    margin-top: auto;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -405,7 +407,7 @@ h3,
 
 .announcement1-container,
 .announcement2-container {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid lightgray;
 }
 
