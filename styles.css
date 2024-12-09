@@ -266,7 +266,7 @@ input[type="search"]:focus {
 
 .header-buttons button {
     background-color: var(--wicked-green);
-    color: inherit;
+    color: black;
     border-style: none;
     border-radius: 20px;
     padding: 8px 12px;
