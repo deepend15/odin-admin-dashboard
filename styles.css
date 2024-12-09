@@ -359,10 +359,39 @@ h3,
 
 .card-icons img {
     height: 1.3rem;
+    vertical-align: bottom;
 }
 
 .card-icons img:hover {
     cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: var(--dark-green);
+    color: var(--wicked-green);
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.tooltip .tooltiptext.watch {
+    width: 70px;
+    margin-left: -35px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 .announcement-section {
