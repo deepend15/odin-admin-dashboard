@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'walter_turncoatregular';
-    src: url('./fonts2/walterturncoat-webfont.woff2') format('woff2'),
-         url('./fonts2/walterturncoat-webfont.woff') format('woff');
+    src: url('./fonts/walterturncoat-webfont.woff2') format('woff2'),
+         url('./fonts/walterturncoat-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'yataghanregular';
-    src: url('./fonts3/yataghan-webfont.woff2') format('woff2'),
-         url('./fonts3/yataghan-webfont.woff') format('woff');
+    src: url('./fonts/yataghan-webfont.woff2') format('woff2'),
+         url('./fonts/yataghan-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
