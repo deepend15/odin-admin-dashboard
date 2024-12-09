@@ -1,5 +1,7 @@
 The intent of this project is to create a sample dashboard design, with a focus on design over functionality. Completion of this project will demonstrate an understanding of intermediate HTML & CSS concepts, including CSS Grid.
 
+Live link: https://deepend15.github.io/odin-admin-dashboard/
+
 Icon credit:
 
 Witch icon created by Freepik - Flaticon: https://www.flaticon.com/free-icons/witch
