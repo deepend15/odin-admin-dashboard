@@ -424,11 +424,19 @@ h3,
     overflow: hidden;
 }
 
-.announcement-tooltiptext {
-    display: block;
+.announcement1-container,
+.announcement2-container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
 }
 
-.announcement-container .tooltip span {
+.announcement-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.announcement-tooltiptext {
+    display: block;
     visibility: hidden;
     color: var(--paragraph-color);
     font-size: 0.8rem;
@@ -449,11 +457,6 @@ h3,
     z-index: 2;
 }
 
-.announcement-container a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .announcement-container a:hover {
     text-decoration: underline;
     h4{
@@ -471,15 +474,9 @@ h3,
         border-left: 3px solid var(--dark-green);
         border-right: 3px solid var(--dark-green);
     }
-    .tooltip span {
+    .announcement-tooltiptext {
         visibility: visible;
     }
-}
-
-.announcement1-container,
-.announcement2-container {
-    padding-bottom: 10px;
-    border-bottom: 1px solid lightgray;
 }
 
 .trending-section {
