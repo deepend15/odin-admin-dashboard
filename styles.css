@@ -369,7 +369,7 @@ h3,
     position: relative;
 }
 
-.tooltip .tooltiptext {
+.card .tooltip .tooltiptext {
     visibility: hidden;
     width: 60px;
     background-color: var(--dark-green);
@@ -384,12 +384,12 @@ h3,
     margin-left: -30px;
 }
 
-.tooltip .tooltiptext.watch {
+.card .tooltip .tooltiptext.watch {
     width: 70px;
     margin-left: -35px;
 }
 
-.tooltip:hover .tooltiptext {
+.card .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
@@ -424,6 +424,31 @@ h3,
     overflow: hidden;
 }
 
+.announcement-tooltiptext {
+    display: block;
+}
+
+.announcement-container .tooltip span {
+    visibility: hidden;
+    color: var(--paragraph-color);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    background-color: var(--light-green);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 115%;
+    padding: 0 14px 8px 12px;
+    position: absolute;
+    top: 0%;
+    margin-left: -14.4px;
+    text-decoration: underline;
+    box-shadow: 0 14px 14px -14px var(--dark-green);
+    border-bottom: 3px solid var(--dark-green);
+    border-left: 3px solid var(--dark-green);
+    border-right: 3px solid var(--dark-green);
+    z-index: 2;
+}
+
 .announcement-container a {
     text-decoration: none;
     color: inherit;
@@ -431,6 +456,24 @@ h3,
 
 .announcement-container a:hover {
     text-decoration: underline;
+    h4{
+        background-color: var(--light-green);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        width: 115%;
+        padding-top: 15px;
+        margin-top: -17.4px;
+        padding-left: 12px;
+        margin-left: -14.4px;
+        margin-bottom: 0px;
+        padding-bottom: 3px;
+        border-top: 3px solid var(--dark-green);
+        border-left: 3px solid var(--dark-green);
+        border-right: 3px solid var(--dark-green);
+    }
+    .tooltip span {
+        visibility: visible;
+    }
 }
 
 .announcement1-container,
